@@ -6,7 +6,7 @@ Registro público y con fecha de las señales de **G5**, una cartera sistemátic
 
 | Bloque | Peso | Descripción |
 |---|---|---|
-| G4 (asset allocation) | 50% | Rotación sectorial por momentum + tendencia en QQQ + tendencia multiactivo. Rebalanceo mensual. |
+| Bloque mensual (asset allocation) | 50% | Hasta el 30-10-2026: **G4** (rotación sectorial por momentum + tendencia en QQQ + tendencia en 30 ETFs). Desde el 2-11-2026: **N14** (rotación sectorial con filtro de tendencia + asignación táctica multiactivo con filtro de tendencia). Rebalanceo mensual. |
 | Bloque táctico | 50% | 4 señales diarias (E382, M3065, R152, Y12050) sobre QQQ, XLK y SMH. Entrada en la apertura y salida al cierre del mismo día. 0,5x por señal, tope de exposición 1,0x del bloque. Sin señal, el bloque está en efectivo (BIL). |
 
 - Capital virtual inicial: **100.000 $**
@@ -19,7 +19,14 @@ Las reglas exactas de cada señal no se publican. Lo que se publica es la señal
 ## Estructura
 
 - `signals/AAAA-MM-DD.json`: señales para la sesión de esa fecha, publicadas la tarde anterior (hora de Nueva York).
-- `results/ledger.csv`: resultado diario de cada bloque y valor de la cartera.
+- `state/monthly/AAAA-MM.json`: pesos del bloque mensual de ese mes, publicados tras el cierre del último día hábil del mes anterior.
+- `state/monthly_block.json`: qué estrategia ocupa el bloque mensual en cada periodo.
+- `results/ledger.csv`: resultado diario de cada bloque y valor de la cartera. La columna `g4_ret` recoge el resultado del bloque mensual, sea G4 o N14.
+
+## Cambios
+
+- **2026-10-08** — Corregidos los pesos de octubre de G4: la pieza de tendencia multiactivo se había calculado con 5 ETFs en lugar de su universo de 30. No se había publicado ninguna señal ni resultado antes de la corrección.
+- **2026-10-08** — Anunciado con antelación: desde noviembre de 2026 el bloque mensual pasa de G4 a N14. Motivo: en una prueba de estrés con 2008-2011, G4 tuvo una caída diaria máxima del −24,9 %; N14, del −12,7 %.
 
 ## Aviso
 

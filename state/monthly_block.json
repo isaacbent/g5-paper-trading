@@ -1,0 +1,17 @@
+{
+  "schedule": [
+    {
+      "from": "2026-10-08",
+      "to": "2026-10-30",
+      "block": "G4",
+      "weights_file": "state/g4_weights.json"
+    },
+    {
+      "from": "2026-11-02",
+      "block": "N14",
+      "weights_file": "state/monthly/AAAA-MM.json (se publica cada mes tras el cierre del ultimo dia habil, antes de la apertura del primer dia habil)"
+    }
+  ],
+  "reason": "G4 fallo la prueba de estres de 2008 (caida diaria -24,9 %). N14 es la estrategia principal del Research Engine: en 2008-11 cayo -12,7 % como maximo.",
+  "decided_on": "2026-10-08"
+}

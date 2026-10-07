@@ -1,10 +1,55 @@
 {
   "effective_from": "2026-10-08",
   "decided_on": "2026-09-30",
+  "block": "G4",
   "components": {
-    "SR36": {"XLK": 0.3333, "XLV": 0.3333, "XLF": 0.3334},
-    "QQQ_Trend": {"QQQ": 1.0},
-    "Broad_ETF_Trend": {"SPY": 0.2, "EFA": 0.2, "DBC": 0.2, "BIL": 0.4}
+    "SR36": {
+      "XLF": 0.3333,
+      "XLK": 0.3333,
+      "XLV": 0.3333
+    },
+    "QQQ_Trend": {
+      "QQQ": 1.0
+    },
+    "Broad_ETF_Trend": {
+      "BIL": 0.4667,
+      "DBC": 0.0333,
+      "EEM": 0.0333,
+      "EFA": 0.0333,
+      "EWJ": 0.0333,
+      "IBB": 0.0333,
+      "IWM": 0.0333,
+      "KRE": 0.0333,
+      "QQQ": 0.0333,
+      "SMH": 0.0333,
+      "SPY": 0.0333,
+      "VGK": 0.0333,
+      "XBI": 0.0333,
+      "XLE": 0.0333,
+      "XLF": 0.0333,
+      "XLK": 0.0333,
+      "XLV": 0.0333
+    }
   },
-  "weights": {"QQQ": 0.3333, "XLK": 0.1111, "XLV": 0.1111, "XLF": 0.1112, "SPY": 0.0667, "EFA": 0.0667, "DBC": 0.0667, "BIL": 0.1333}
+  "weights": {
+    "QQQ": 0.3444,
+    "BIL": 0.1558,
+    "XLF": 0.1222,
+    "XLK": 0.1222,
+    "XLV": 0.1222,
+    "DBC": 0.0111,
+    "EEM": 0.0111,
+    "EFA": 0.0111,
+    "EWJ": 0.0111,
+    "IBB": 0.0111,
+    "IWM": 0.0111,
+    "KRE": 0.0111,
+    "SMH": 0.0111,
+    "SPY": 0.0111,
+    "VGK": 0.0111,
+    "XBI": 0.0111,
+    "XLE": 0.0111
+  },
+  "correction": "2026-10-08: Broad_ETF_Trend recalculado con su universo completo de 30 ETFs (antes se habia calculado con solo 5). SR36 y QQQ_Trend no cambian.",
+  "valid_until": "2026-10-30 (cierre). Desde noviembre de 2026 el bloque mensual pasa a N14: ver state/monthly_block.json"
 }
