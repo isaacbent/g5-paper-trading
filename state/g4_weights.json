@@ -1,0 +1,10 @@
+{
+  "effective_from": "2026-10-08",
+  "decided_on": "2026-09-30",
+  "components": {
+    "SR36": {"XLK": 0.3333, "XLV": 0.3333, "XLF": 0.3334},
+    "QQQ_Trend": {"QQQ": 1.0},
+    "Broad_ETF_Trend": {"SPY": 0.2, "EFA": 0.2, "DBC": 0.2, "BIL": 0.4}
+  },
+  "weights": {"QQQ": 0.3333, "XLK": 0.1111, "XLV": 0.1111, "XLF": 0.1112, "SPY": 0.0667, "EFA": 0.0667, "DBC": 0.0667, "BIL": 0.1333}
+}
