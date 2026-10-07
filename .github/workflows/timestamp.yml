@@ -1,0 +1,46 @@
+name: Sellado de tiempo (OpenTimestamps)
+
+on:
+  push:
+    branches: [main]
+    paths: ["signals/**", "results/**", "state/**"]
+  schedule:
+    - cron: "17 6 * * *"   # mejora diaria de los sellos pendientes a confirmación en Bitcoin
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: timestamp
+  cancel-in-progress: false
+
+jobs:
+  stamp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install opentimestamps-client
+      - name: Huella de los archivos de datos y sello
+        if: github.event_name != 'schedule'
+        run: |
+          ts=$(date -u +%Y-%m-%dT%H%M%SZ)
+          find signals results state -type f ! -name .gitkeep | sort | xargs sha256sum > "proofs/$ts.sha256"
+          echo "commit $GITHUB_SHA" >> "proofs/$ts.sha256"
+          ots stamp "proofs/$ts.sha256"
+      - name: Mejorar sellos pendientes
+        run: |
+          for f in proofs/*.ots; do [ -e "$f" ] && (ots upgrade "$f" || true); done
+          rm -f proofs/*.ots.bak
+      - name: Guardar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add proofs
+          git diff --cached --quiet && exit 0
+          git commit -m "Sello de tiempo OpenTimestamps"
+          for i in 1 2 3; do git pull --rebase -q && git push && exit 0; sleep 5; done
+          exit 1

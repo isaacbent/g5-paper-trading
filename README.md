@@ -21,6 +21,7 @@ Las reglas exactas de cada señal no se publican. Lo que se publica es la señal
 - `signals/AAAA-MM-DD.json`: señales para la sesión de esa fecha, publicadas la tarde anterior (hora de Nueva York).
 - `state/monthly/AAAA-MM.json`: pesos del bloque mensual de ese mes, publicados tras el cierre del último día hábil del mes anterior.
 - `state/monthly_block.json`: qué estrategia ocupa el bloque mensual en cada periodo.
+- `proofs/`: huellas SHA-256 de todos los archivos de datos en cada actualización, selladas con [OpenTimestamps](https://opentimestamps.org) (anclaje en Bitcoin) por GitHub Actions. Un `.ots` permite a cualquiera verificar que esos archivos existían en esa fecha: `ots verify proofs/<archivo>.sha256.ots`.
 - `results/ledger.csv`: resultado diario de cada bloque y valor de la cartera. La columna `g4_ret` recoge el resultado del bloque mensual, sea G4 o N14.
 
 ## Cambios
