@@ -39,6 +39,7 @@ volatilidad (lo no invertido queda en BIL). Las reglas exactas no se publican.
 
 - **2026-10-08** — Corregidos los pesos de octubre de G4: la pieza de tendencia multiactivo se había calculado con 5 ETFs en lugar de su universo de 30. No se había publicado ninguna señal ni resultado antes de la corrección.
 - **2026-10-08** — Añadido el registro independiente G3VT (empieza el 12-10-2026).
+- **2026-10-08 (22:16)** — Aviso sobre el bloque táctico: sus 4 señales se validaron con datos 2008-2026. Funcionan en 2020-2026 (el periodo en que se diseñaron) pero no en 2012-2019; una de ellas no generaliza a activos parecidos. Se mantienen sin cambios para medir su comportamiento real, sabiendo que es probable que rindan menos que en su histórico.
 - **2026-10-08 (22:13)** — Cambio del anuncio anterior, antes de cualquier operación: desde noviembre de 2026 el bloque mensual pasa de G4 a **P10**, no a N14. Motivo: con datos continuos 2006-2026, P10 cae menos en 2008-11, 2012-19 y 2020-23 (−9,6 %, −7,7 %, −9,0 %) que N14 (−12,7 %, −12,1 %, −14,3 %).
 - **2026-10-08** — Anunciado con antelación: desde noviembre de 2026 el bloque mensual pasa de G4 a N14. Motivo: en una prueba de estrés con 2008-2011, G4 tuvo una caída diaria máxima del −24,9 %; N14, del −12,7 %.
 
