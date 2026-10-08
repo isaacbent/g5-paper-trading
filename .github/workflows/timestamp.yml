@@ -3,7 +3,7 @@ name: Sellado de tiempo (OpenTimestamps)
 on:
   push:
     branches: [main]
-    paths: ["signals/**", "results/**", "state/**"]
+    paths: ["signals/**", "results/**", "state/**", "g3vt/**"]
   schedule:
     - cron: "17 6 * * *"   # mejora diaria de los sellos pendientes a confirmación en Bitcoin
   workflow_dispatch:
@@ -28,7 +28,7 @@ jobs:
         if: github.event_name != 'schedule'
         run: |
           ts=$(date -u +%Y-%m-%dT%H%M%SZ)
-          find signals results state -type f ! -name .gitkeep | sort | xargs sha256sum > "proofs/$ts.sha256"
+          find signals results state g3vt -type f ! -name .gitkeep | sort | xargs sha256sum > "proofs/$ts.sha256"
           echo "commit $GITHUB_SHA" >> "proofs/$ts.sha256"
           ots stamp "proofs/$ts.sha256"
       - name: Mejorar sellos pendientes

@@ -16,6 +16,17 @@ Registro público y con fecha de las señales de **G5**, una cartera sistemátic
 
 Las reglas exactas de cada señal no se publican. Lo que se publica es la señal y su resultado, con la fecha del commit como prueba de que existía antes de la apertura.
 
+## G3VT (registro independiente, desde noviembre de 2026)
+
+Además de G5, se publica una segunda cartera, **G3VT**, con su propio capital virtual de 100.000 $. Es una rotación
+multiactivo de ETFs, solo largo y sin apalancamiento, que se revisa cada semana y ajusta su exposición cada día según la
+volatilidad (lo no invertido queda en BIL). Las reglas exactas no se publican.
+
+- `g3vt/weights/AAAA-MM-DD.json`: pesos para la apertura de esa sesión, publicados tras el cierre del último día hábil
+  de la semana anterior. Primera publicación: cierre del 30-10-2026, para la apertura del 2-11-2026.
+- `g3vt/exposure.csv`: exposición decidida en cada cierre; se aplica desde el cierre de la sesión siguiente.
+- `g3vt/ledger.csv`: resultado por semana, capital y caída máxima diaria acumulada.
+
 ## Estructura
 
 - `signals/AAAA-MM-DD.json`: señales para la sesión de esa fecha, publicadas la tarde anterior (hora de Nueva York).
@@ -27,6 +38,7 @@ Las reglas exactas de cada señal no se publican. Lo que se publica es la señal
 ## Cambios
 
 - **2026-10-08** — Corregidos los pesos de octubre de G4: la pieza de tendencia multiactivo se había calculado con 5 ETFs en lugar de su universo de 30. No se había publicado ninguna señal ni resultado antes de la corrección.
+- **2026-10-08** — Añadido el registro independiente G3VT (empieza el 2-11-2026).
 - **2026-10-08** — Anunciado con antelación: desde noviembre de 2026 el bloque mensual pasa de G4 a N14. Motivo: en una prueba de estrés con 2008-2011, G4 tuvo una caída diaria máxima del −24,9 %; N14, del −12,7 %.
 
 ## Aviso
