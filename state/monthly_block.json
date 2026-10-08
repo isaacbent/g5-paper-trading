@@ -8,10 +8,14 @@
     },
     {
       "from": "2026-11-02",
-      "block": "N14",
+      "block": "P10",
       "weights_file": "state/monthly/AAAA-MM.json (se publica cada mes tras el cierre del ultimo dia habil, antes de la apertura del primer dia habil)"
     }
   ],
-  "reason": "G4 fallo la prueba de estres de 2008 (caida diaria -24,9 %). N14 es la estrategia principal del Research Engine: en 2008-11 cayo -12,7 % como maximo.",
-  "decided_on": "2026-10-08"
+  "reason": "G4 fallo la prueba de estres de 2008 (caida diaria -24,9 %). Desde el 2-11-2026 el bloque mensual es P10 (tres reglas publicadas de asignacion tactica: HAA, BAA y GTAA), elegida por tener la menor caida en 2008-11, 2012-19 y 2020-23 (-9,6 %, -7,7 %, -9,0 %).",
+  "decided_on": "2026-10-08",
+  "history": [
+    "2026-10-08 00:15: anunciado G4 -> N14 desde 2026-11-02",
+    "2026-10-08 22:13: cambiado a G4 -> P10 desde 2026-11-02 (antes de cualquier operacion de N14)"
+  ]
 }

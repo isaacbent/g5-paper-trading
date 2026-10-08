@@ -6,7 +6,7 @@ Registro público y con fecha de las señales de **G5**, una cartera sistemátic
 
 | Bloque | Peso | Descripción |
 |---|---|---|
-| Bloque mensual (asset allocation) | 50% | Hasta el 30-10-2026: **G4** (rotación sectorial por momentum + tendencia en QQQ + tendencia en 30 ETFs). Desde el 2-11-2026: **N14** (rotación sectorial con filtro de tendencia + asignación táctica multiactivo con filtro de tendencia). Rebalanceo mensual. |
+| Bloque mensual (asset allocation) | 50% | Hasta el 30-10-2026: **G4** (rotación sectorial por momentum + tendencia en QQQ + tendencia en 30 ETFs). Desde el 2-11-2026: **P10** (tres reglas publicadas de asignación táctica multiactivo con alarmas de riesgo y filtros de tendencia, un tercio cada una). Rebalanceo mensual. |
 | Bloque táctico | 50% | 4 señales diarias (E382, M3065, R152, Y12050) sobre QQQ, XLK y SMH. Entrada en la apertura y salida al cierre del mismo día. 0,5x por señal, tope de exposición 1,0x del bloque. Sin señal, el bloque está en efectivo (BIL). |
 
 - Capital virtual inicial: **100.000 $**
@@ -33,12 +33,13 @@ volatilidad (lo no invertido queda en BIL). Las reglas exactas no se publican.
 - `state/monthly/AAAA-MM.json`: pesos del bloque mensual de ese mes, publicados tras el cierre del último día hábil del mes anterior.
 - `state/monthly_block.json`: qué estrategia ocupa el bloque mensual en cada periodo.
 - `proofs/`: huellas SHA-256 de todos los archivos de datos en cada actualización, selladas con [OpenTimestamps](https://opentimestamps.org) (anclaje en Bitcoin) por GitHub Actions. Un `.ots` permite a cualquiera verificar que esos archivos existían en esa fecha: `ots verify proofs/<archivo>.sha256.ots`.
-- `results/ledger.csv`: resultado diario de cada bloque y valor de la cartera. La columna `g4_ret` recoge el resultado del bloque mensual, sea G4 o N14.
+- `results/ledger.csv`: resultado diario de cada bloque y valor de la cartera. La columna `g4_ret` recoge el resultado del bloque mensual, sea G4 o P10.
 
 ## Cambios
 
 - **2026-10-08** — Corregidos los pesos de octubre de G4: la pieza de tendencia multiactivo se había calculado con 5 ETFs en lugar de su universo de 30. No se había publicado ninguna señal ni resultado antes de la corrección.
 - **2026-10-08** — Añadido el registro independiente G3VT (empieza el 12-10-2026).
+- **2026-10-08 (22:13)** — Cambio del anuncio anterior, antes de cualquier operación: desde noviembre de 2026 el bloque mensual pasa de G4 a **P10**, no a N14. Motivo: con datos continuos 2006-2026, P10 cae menos en 2008-11, 2012-19 y 2020-23 (−9,6 %, −7,7 %, −9,0 %) que N14 (−12,7 %, −12,1 %, −14,3 %).
 - **2026-10-08** — Anunciado con antelación: desde noviembre de 2026 el bloque mensual pasa de G4 a N14. Motivo: en una prueba de estrés con 2008-2011, G4 tuvo una caída diaria máxima del −24,9 %; N14, del −12,7 %.
 
 ## Aviso
