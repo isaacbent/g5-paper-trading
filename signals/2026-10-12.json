@@ -1,0 +1,30 @@
+{
+  "session": "2026-10-12",
+  "based_on_close_of": "2026-10-09",
+  "published_utc": "2026-10-09T22:31:50Z",
+  "tactical": [
+    {
+      "id": "E382",
+      "symbol": "QQQ",
+      "signal": false
+    },
+    {
+      "id": "M3065",
+      "symbol": "QQQ",
+      "signal": false
+    },
+    {
+      "id": "R152",
+      "symbol": "XLK",
+      "signal": false
+    },
+    {
+      "id": "Y12050",
+      "symbol": "SMH",
+      "signal": false
+    }
+  ],
+  "positions": {},
+  "tactical_exposure": 0,
+  "execution": "entrada en la apertura de la sesi\u00f3n, salida al cierre; resto del bloque t\u00e1ctico en BIL"
+}

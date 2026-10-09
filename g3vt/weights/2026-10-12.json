@@ -1,0 +1,16 @@
+{
+  "strategy": "G3VT",
+  "execute_at_open_of": "2026-10-12",
+  "decided_on_close_of": "2026-10-09",
+  "published_utc": "2026-10-09T22:31:53Z",
+  "target_weights": {
+    "BIL": 0.3632,
+    "QQQ": 0.3162,
+    "DBC": 0.1139,
+    "XLK": 0.0689,
+    "XLV": 0.0689,
+    "XLE": 0.0689
+  },
+  "exposure_now": 1.0,
+  "note": "weights already scaled by the current exposure; the uninvested part is in BIL. The exposure is re-decided every close (see exposure.csv)."
+}
