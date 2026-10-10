@@ -38,6 +38,16 @@ caídas): se publica para medir su comportamiento real. Las reglas exactas no se
 - `c2/weights/AAAA-MM-DD.json`: pesos agregados para la apertura de esa sesión y qué subcartera se revisa.
 - `c2/ledger.csv`: resultado diario, capital y caída máxima diaria acumulada.
 
+## J1 (seguimiento en paper, desde el 12 de octubre de 2026)
+
+Cuarta cartera virtual (100.000 $), **solo de seguimiento**. Combina un 80 % de rotación multiactivo de ETFs repartida en
+5 subcarteras semanales con control diario de volatilidad y un 20 % de un componente de calendario (SPY en fechas
+fijas del mes, BIL el resto). Es la única candidata que alcanzó el nivel "paper" del estándar de robustez del engine
+(supera 7 de 8 pruebas; falla la de costes dobles). Reglas congeladas y no publicadas.
+
+- `j1/weights/AAAA-MM-DD.json`: pesos agregados para esa sesión (incluye si el componente de calendario está en SPY).
+- `j1/ledger.csv`: resultado diario, capital y caída máxima diaria acumulada.
+
 ## Estructura
 
 - `signals/AAAA-MM-DD.json`: señales para la sesión de esa fecha, publicadas la tarde anterior (hora de Nueva York).
@@ -47,6 +57,8 @@ caídas): se publica para medir su comportamiento real. Las reglas exactas no se
 - `results/ledger.csv`: resultado diario de cada bloque y valor de la cartera. La columna `g4_ret` recoge el resultado del bloque mensual, sea G4 o P10.
 
 ## Cambios
+
+- **2026-10-10** — Añadido el seguimiento en paper de J1 (empieza el 12-10-2026). C2 se mantiene como comparación; según el estándar de robustez del engine queda descartada.
 
 - **2026-10-10** — Añadido el seguimiento en paper de C2 (empieza el 12-10-2026), en paralelo y sin cambiar G5 ni G3VT.
 
