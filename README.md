@@ -27,6 +27,17 @@ volatilidad (lo no invertido queda en BIL). Las reglas exactas no se publican.
 - `g3vt/exposure.csv`: exposición decidida en cada cierre; se aplica desde el cierre de la sesión siguiente.
 - `g3vt/ledger.csv`: resultado por semana, capital y caída máxima diaria acumulada.
 
+## C2 (seguimiento en paper, desde el 12 de octubre de 2026)
+
+Tercera cartera virtual (100.000 $), **solo de seguimiento**: no sustituye a G5 ni a G3VT. Es una rotación multiactivo
+de ETFs, solo largo y sin apalancamiento, repartida en 5 subcarteras del 20 % que se revisan cada una un día distinto
+de la semana, con control diario de volatilidad (lo no invertido queda en BIL). En el histórico cumplía el objetivo
+(8 % anual con caída máxima de −10 %), pero no superó dos de cuatro pruebas de robustez (costes dobles y simulación de
+caídas): se publica para medir su comportamiento real. Las reglas exactas no se publican y quedan congeladas.
+
+- `c2/weights/AAAA-MM-DD.json`: pesos agregados para la apertura de esa sesión y qué subcartera se revisa.
+- `c2/ledger.csv`: resultado diario, capital y caída máxima diaria acumulada.
+
 ## Estructura
 
 - `signals/AAAA-MM-DD.json`: señales para la sesión de esa fecha, publicadas la tarde anterior (hora de Nueva York).
@@ -36,6 +47,8 @@ volatilidad (lo no invertido queda en BIL). Las reglas exactas no se publican.
 - `results/ledger.csv`: resultado diario de cada bloque y valor de la cartera. La columna `g4_ret` recoge el resultado del bloque mensual, sea G4 o P10.
 
 ## Cambios
+
+- **2026-10-10** — Añadido el seguimiento en paper de C2 (empieza el 12-10-2026), en paralelo y sin cambiar G5 ni G3VT.
 
 - **2026-10-08** — Corregidos los pesos de octubre de G4: la pieza de tendencia multiactivo se había calculado con 5 ETFs en lugar de su universo de 30. No se había publicado ninguna señal ni resultado antes de la corrección.
 - **2026-10-08** — Añadido el registro independiente G3VT (empieza el 12-10-2026).
