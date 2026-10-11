@@ -48,6 +48,18 @@ fijas del mes, BIL el resto). Es la única candidata que alcanzó el nivel "pape
 - `j1/weights/AAAA-MM-DD.json`: pesos agregados para esa sesión (incluye si el componente de calendario está en SPY).
 - `j1/ledger.csv`: resultado diario, capital y caída máxima diaria acumulada.
 
+## S4 (seguimiento en paper, desde el 12 de octubre de 2026)
+
+Quinta cartera virtual (100.000 $), **solo de seguimiento**. No es una estrategia elegida por su historial, sino por un
+método: el engine reparte la mitad entre las combinaciones de estrategias más estables de su historial y la otra mitad a
+partes iguales entre todas. Ese método se comprobó eligiendo cada año solo con datos pasados y midiendo el año
+siguiente: 2012-2023, 8,0 % anual frente a 7,6 % del reparto igual. Sin control de volatilidad, en 5 subcarteras
+semanales. Puede tener pequeñas posiciones cortas. Reglas congeladas y no publicadas; se volverá a seleccionar una vez al
+año, en enero, avisándolo aquí antes.
+
+- `s4/weights/AAAA-MM-DD.json`: pesos agregados para esa sesión.
+- `s4/ledger.csv`: resultado diario, capital y caída máxima diaria acumulada.
+
 ## Estructura
 
 - `signals/AAAA-MM-DD.json`: señales para la sesión de esa fecha, publicadas la tarde anterior (hora de Nueva York).
@@ -57,6 +69,8 @@ fijas del mes, BIL el resto). Es la única candidata que alcanzó el nivel "pape
 - `results/ledger.csv`: resultado diario de cada bloque y valor de la cartera. La columna `g4_ret` recoge el resultado del bloque mensual, sea G4 o P10.
 
 ## Cambios
+
+- **2026-10-11** — Añadido el seguimiento en paper de S4 (empieza el 12-10-2026), en paralelo y sin cambiar las demás carteras.
 
 - **2026-10-10** — Añadido el seguimiento en paper de J1 (empieza el 12-10-2026). C2 se mantiene como comparación; según el estándar de robustez del engine queda descartada.
 
