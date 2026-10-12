@@ -60,6 +60,21 @@ año, en enero, avisándolo aquí antes.
 - `s4/weights/AAAA-MM-DD.json`: pesos agregados para esa sesión.
 - `s4/ledger.csv`: resultado diario, capital y caída máxima diaria acumulada.
 
+## Familia P: P2, P3, P3-L, P4, P5, P3K5 y P5K5 (seguimiento en paper, desde el 13 de octubre de 2026)
+
+Siete carteras virtuales más, cada una con 100.000 $, **solo de seguimiento**. Son las carteras sistemáticas congeladas
+del engine (reglas y pesos sin reajustar desde su congelación): combinan estrategias de días o semanas sobre ETFs (SMH,
+IWM, XLP, XLV y una rotación defensiva entre TLT, GLD, HYG, UUP, XLU, XLP y XLV), con límites de exposición. P3K5 y P5K5
+añaden un 20 % de tendencia en DBMF. En P2, P3 y P4 lo no invertido queda en efectivo sin remunerar; en P3-L, P5, P3K5 y
+P5K5, en BIL. Solo largo y sin apalancamiento. Las reglas exactas no se publican.
+
+- Las señales se deciden con el cierre y se suponen ejecutadas a ese mismo cierre, como en su backtest. Los archivos se
+  publican después del cierre, así que en la práctica solo se podrían replicar en la apertura siguiente.
+- Fricción supuesta: 0,05 % por lado sobre el peso de cada posición.
+- `p/<cartera>/weights/AAAA-MM-DD.json` (carpetas p2, p3, p3l, p4, p5, p3k5, p5k5): pesos para esa sesión y en qué está
+  cada estrategia, publicados tras el cierre anterior.
+- `p/<cartera>/ledger.csv`: resultado diario, exposición, capital y caída máxima diaria acumulada.
+
 ## Estructura
 
 - `signals/AAAA-MM-DD.json`: señales para la sesión de esa fecha, publicadas la tarde anterior (hora de Nueva York).
@@ -69,6 +84,8 @@ año, en enero, avisándolo aquí antes.
 - `results/ledger.csv`: resultado diario de cada bloque y valor de la cartera. La columna `g4_ret` recoge el resultado del bloque mensual, sea G4 o P10.
 
 ## Cambios
+
+- **2026-10-12** — Añadido el seguimiento en paper de la familia P (P2, P3, P3-L, P4, P5, P3K5 y P5K5), desde la sesión del 13-10-2026, en paralelo y sin cambiar las demás carteras.
 
 - **2026-10-11** — Añadido el seguimiento en paper de S4 (empieza el 12-10-2026), en paralelo y sin cambiar las demás carteras.
 
