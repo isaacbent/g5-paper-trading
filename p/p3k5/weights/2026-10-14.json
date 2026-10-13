@@ -1,0 +1,20 @@
+{
+  "portfolio": "P3K5",
+  "execute_at_close_of": "2026-10-13",
+  "holds_session": "2026-10-14",
+  "decided_on_close_of": "2026-10-13",
+  "published_utc": "2026-10-13T22:32:43Z",
+  "target_weights": {
+    "DBMF": 0.2,
+    "BIL": 0.8
+  },
+  "exposure": 0.2,
+  "positions_by_strategy": {
+    "FX415": "none",
+    "DF374": "none",
+    "IWM_UP_DN_20D": "none",
+    "DR20": "none",
+    "K5_DBMF_TREND": "DBMF"
+  },
+  "note": "weights after caps; entries and exits happen at the close of decided_on_close_of; uninvested part in BIL"
+}
