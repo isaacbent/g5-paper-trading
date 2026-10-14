@@ -1,0 +1,34 @@
+{
+  "session": "2026-10-15",
+  "based_on_close_of": "2026-10-14",
+  "published_utc": "2026-10-14T23:43:03Z",
+  "tactical": [
+    {
+      "id": "E382",
+      "symbol": "QQQ",
+      "signal": true
+    },
+    {
+      "id": "M3065",
+      "symbol": "QQQ",
+      "signal": true
+    },
+    {
+      "id": "R152",
+      "symbol": "XLK",
+      "signal": true
+    },
+    {
+      "id": "Y12050",
+      "symbol": "SMH",
+      "signal": false
+    }
+  ],
+  "positions": {
+    "QQQ": 0.5,
+    "XLK": 0.5
+  },
+  "tactical_exposure": 1.0,
+  "execution": "entrada en la apertura de la sesi\u00f3n, salida al cierre; resto del bloque t\u00e1ctico en BIL",
+  "notes": "publicado por el verificador (el proceso principal no lo hab\u00eda publicado)"
+}
