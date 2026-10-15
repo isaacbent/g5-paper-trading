@@ -85,6 +85,8 @@ P5K5, en BIL. Solo largo y sin apalancamiento. Las reglas exactas no se publican
 
 ## Cambios
 
+- **2026-10-15** — Aviso: los pesos de G3VT, C2, J1 y S4 para la sesión del 15-10 (cierre del 14-10) se publicaron tarde, el 15-10 hacia las 22:20 UTC, después de esa sesión, por un retraso de la rutina automática. Se calcularon solo con datos hasta el cierre del 14-10 y con las reglas congeladas, sin cambios; la hora real queda en cada archivo (published_utc). Las señales de G5 y los pesos de la familia P de ese día sí se publicaron a tiempo.
+
 - **2026-10-12** — Añadido el seguimiento en paper de la familia P (P2, P3, P3-L, P4, P5, P3K5 y P5K5), desde la sesión del 13-10-2026, en paralelo y sin cambiar las demás carteras.
 
 - **2026-10-11** — Añadido el seguimiento en paper de S4 (empieza el 12-10-2026), en paralelo y sin cambiar las demás carteras.
