@@ -75,6 +75,17 @@ P5K5, en BIL. Solo largo y sin apalancamiento. Las reglas exactas no se publican
   cada estrategia, publicados tras el cierre anterior.
 - `p/<cartera>/ledger.csv`: resultado diario, exposición, capital y caída máxima diaria acumulada.
 
+## S5 (seguimiento en paper, desde el 19 de octubre de 2026)
+
+Sexta cartera virtual (100.000 $), **solo de seguimiento**, versión "más crecimiento" de S4: la mitad se reparte entre
+las combinaciones del engine que más crecieron con mínimos crecientes (cada caída termina por encima de la anterior) y
+la otra mitad a partes iguales entre todas. Comprobado eligiendo cada año solo con datos pasados: 2012-2023, 8,5 % anual
+con una caída máxima de −14,5 % (S4: 8,0 % y −13,4 %). Acepta caídas algo mayores a cambio de algo más de rentabilidad.
+Reglas congeladas y no publicadas.
+
+- `s5/weights/AAAA-MM-DD.json`: pesos agregados para esa sesión.
+- `s5/ledger.csv`: resultado diario, capital y caída máxima diaria acumulada.
+
 ## Estructura
 
 - `signals/AAAA-MM-DD.json`: señales para la sesión de esa fecha, publicadas la tarde anterior (hora de Nueva York).
@@ -84,6 +95,8 @@ P5K5, en BIL. Solo largo y sin apalancamiento. Las reglas exactas no se publican
 - `results/ledger.csv`: resultado diario de cada bloque y valor de la cartera. La columna `g4_ret` recoge el resultado del bloque mensual, sea G4 o P10.
 
 ## Cambios
+
+- **2026-10-16** — Añadido el seguimiento en paper de S5 (empieza el 19-10-2026, primeros pesos tras el cierre del 16-10), en paralelo y sin cambiar las demás carteras.
 
 - **2026-10-15** — Aviso: los pesos de G3VT, C2, J1 y S4 para la sesión del 15-10 (cierre del 14-10) se publicaron tarde, el 15-10 hacia las 22:20 UTC, después de esa sesión, por un retraso de la rutina automática. Se calcularon solo con datos hasta el cierre del 14-10 y con las reglas congeladas, sin cambios; la hora real queda en cada archivo (published_utc). Las señales de G5 y los pesos de la familia P de ese día sí se publicaron a tiempo.
 
