@@ -86,6 +86,16 @@ Reglas congeladas y no publicadas.
 - `s5/weights/AAAA-MM-DD.json`: pesos agregados para esa sesión.
 - `s5/ledger.csv`: resultado diario, capital y caída máxima diaria acumulada.
 
+## S6 (seguimiento en paper, desde el 19 de octubre de 2026)
+
+Séptima cartera virtual (100.000 $), **solo de seguimiento**, perfil "crecimiento": las 20 combinaciones del engine que
+más crecieron entre las que nunca cayeron más de un 25 %. Comprobado eligiendo cada año solo con datos pasados: 2012-2023,
+10,8 % anual (2020-2023: 14,5 % con una caída máxima de −19,0 %; 2024-2026: 10,8 %). Acepta caídas de hasta −20/−25 % a
+cambio de más rentabilidad, y hoy está concentrada en el Nasdaq (QQQ). Reglas congeladas y no publicadas.
+
+- `s6/weights/AAAA-MM-DD.json`: pesos agregados para esa sesión.
+- `s6/ledger.csv`: resultado diario, capital y caída máxima diaria acumulada.
+
 ## Estructura
 
 - `signals/AAAA-MM-DD.json`: señales para la sesión de esa fecha, publicadas la tarde anterior (hora de Nueva York).
@@ -95,6 +105,8 @@ Reglas congeladas y no publicadas.
 - `results/ledger.csv`: resultado diario de cada bloque y valor de la cartera. La columna `g4_ret` recoge el resultado del bloque mensual, sea G4 o P10.
 
 ## Cambios
+
+- **2026-10-17** — Añadido el seguimiento en paper de S6, perfil crecimiento (empieza el 19-10-2026, primeros pesos publicados el 17-10 con datos hasta el cierre del 16-10), en paralelo y sin cambiar las demás carteras.
 
 - **2026-10-16** — Añadido el seguimiento en paper de S5 (empieza el 19-10-2026, primeros pesos tras el cierre del 16-10), en paralelo y sin cambiar las demás carteras.
 
