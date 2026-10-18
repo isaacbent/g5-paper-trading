@@ -96,6 +96,17 @@ cambio de más rentabilidad, y hoy está concentrada en el Nasdaq (QQQ). Reglas 
 - `s6/weights/AAAA-MM-DD.json`: pesos agregados para esa sesión.
 - `s6/ledger.csv`: resultado diario, capital y caída máxima diaria acumulada.
 
+## S7 (seguimiento en paper, desde el 19 de octubre de 2026)
+
+Octava cartera virtual (100.000 $), **solo de seguimiento**, perfil "baja caída": tres estrategias de rotación con pesos
+fijos, una de ellas nueva (exposición al S&P 500 solo cuando su volatilidad reciente está por debajo de la del último año).
+En pruebas 2008-2023 su caída máxima diaria se mantuvo entre −9 % y −11 % con unos 8 % anuales, pero **no pasó las pruebas
+de robustez del engine**: una de las ventanas quedó por debajo del 8 % y el proceso que la encontró no funcionó fuera de
+muestra. Se sigue solo como observación. Reglas congeladas y no publicadas.
+
+- `s7/weights/AAAA-MM-DD.json`: pesos agregados para esa sesión.
+- `s7/ledger.csv`: resultado diario, capital y caída máxima diaria acumulada.
+
 ## Estructura
 
 - `signals/AAAA-MM-DD.json`: señales para la sesión de esa fecha, publicadas la tarde anterior (hora de Nueva York).
@@ -105,6 +116,8 @@ cambio de más rentabilidad, y hoy está concentrada en el Nasdaq (QQQ). Reglas 
 - `results/ledger.csv`: resultado diario de cada bloque y valor de la cartera. La columna `g4_ret` recoge el resultado del bloque mensual, sea G4 o P10.
 
 ## Cambios
+
+- **2026-10-18** — Añadido el seguimiento en paper de S7, perfil baja caída (empieza el 19-10-2026, primeros pesos publicados el 18-10 con datos hasta el cierre del 16-10), en paralelo y sin cambiar las demás carteras.
 
 - **2026-10-17** — Añadido el seguimiento en paper de S6, perfil crecimiento (empieza el 19-10-2026, primeros pesos publicados el 17-10 con datos hasta el cierre del 16-10), en paralelo y sin cambiar las demás carteras.
 

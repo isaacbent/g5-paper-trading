@@ -1,0 +1,45 @@
+{
+  "strategy": "S7 low-drawdown group BAA_G12 + DM_CANARY + VOLMGD_SPY (paper follow-up)",
+  "execute_at_open_of": "2026-10-19",
+  "decided_on_close_of": "2026-10-16",
+  "published_utc": "2026-10-18T17:29:37Z",
+  "aggregate_target_weights": {
+    "BIL": 0.4388,
+    "SPY": 0.3114,
+    "DBC": 0.1281,
+    "QQQ": 0.1217
+  },
+  "tranches": [
+    {
+      "tranche": 0,
+      "last_decision_close": "2026-10-16",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": true
+    },
+    {
+      "tranche": 1,
+      "last_decision_close": "2026-10-12",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": false
+    },
+    {
+      "tranche": 2,
+      "last_decision_close": "2026-10-13",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": false
+    },
+    {
+      "tranche": 3,
+      "last_decision_close": "2026-10-14",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": false
+    },
+    {
+      "tranche": 4,
+      "last_decision_close": "2026-10-15",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": false
+    }
+  ],
+  "note": "5 tranches of 20 %; one tranche re-decides each session; no volatility layer; rest in BIL"
+}
