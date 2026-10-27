@@ -1,0 +1,50 @@
+{
+  "strategy": "S6 growth selection (paper follow-up)",
+  "execute_at_open_of": "2026-10-28",
+  "decided_on_close_of": "2026-10-27",
+  "published_utc": "2026-10-27T22:31:58Z",
+  "aggregate_target_weights": {
+    "QQQ": 0.8017,
+    "BIL": 0.0928,
+    "SPY": 0.0383,
+    "XLV": 0.0194,
+    "XLE": 0.0194,
+    "XLK": 0.0139,
+    "DBC": 0.0056,
+    "XLF": 0.0056,
+    "GLD": 0.0033
+  },
+  "tranches": [
+    {
+      "tranche": 0,
+      "last_decision_close": "2026-10-23",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": false
+    },
+    {
+      "tranche": 1,
+      "last_decision_close": "2026-10-26",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": false
+    },
+    {
+      "tranche": 2,
+      "last_decision_close": "2026-10-27",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": true
+    },
+    {
+      "tranche": 3,
+      "last_decision_close": "2026-10-21",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": false
+    },
+    {
+      "tranche": 4,
+      "last_decision_close": "2026-10-22",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": false
+    }
+  ],
+  "note": "5 tranches of 20 %; one tranche re-decides each session; no volatility layer; rest in BIL"
+}
