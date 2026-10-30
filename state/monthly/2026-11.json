@@ -1,0 +1,34 @@
+{
+  "effective_from": "2026-11-02",
+  "decided_on": "2026-10-30",
+  "block": "P10",
+  "strategy": "P10_HAA_BAA_GTAA5",
+  "spec_hash": "83787d2e300c76f219f6cc2407d3d3210247371690ef3f1442c03e5a3a1cfcc0",
+  "components": {
+    "HAA": {
+      "DBC": 0.25,
+      "EFA": 0.25,
+      "IWM": 0.25,
+      "SPY": 0.25
+    },
+    "BAA_G12": {
+      "BIL": 0.6667,
+      "DBC": 0.3333
+    },
+    "GTAA5": {
+      "BIL": 0.4,
+      "EFA": 0.2,
+      "QQQ": 0.2,
+      "SPY": 0.2
+    }
+  },
+  "weights": {
+    "BIL": 0.3556,
+    "DBC": 0.1944,
+    "EFA": 0.15,
+    "SPY": 0.15,
+    "IWM": 0.0833,
+    "QQQ": 0.0667
+  },
+  "execute": "apertura de la primera sesion de noviembre (2026-11-02); se mantiene hasta la apertura de la primera sesion de diciembre"
+}
