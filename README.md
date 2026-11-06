@@ -117,6 +117,8 @@ muestra. Se sigue solo como observación. Reglas congeladas y no publicadas.
 
 ## Cambios
 
+- **2026-11-06** — El proceso principal del cierre del 05-11 se ejecutó con unas 12 horas de retraso (11:17 UTC del 06-11). La fila del 05-11 del registro de G5 y las señales del 06-11 las publicó el verificador a su hora y no se han tocado (las señales coinciden con las del motor: XLK 0,5x). Los pesos del 06-11 de G3VT, C2, J1 y S4-S7 se publicaron igualmente antes de la apertura del 06-11.
+
 - **2026-10-18** — Añadido el seguimiento en paper de S7, perfil baja caída (empieza el 19-10-2026, primeros pesos publicados el 18-10 con datos hasta el cierre del 16-10), en paralelo y sin cambiar las demás carteras.
 
 - **2026-10-17** — Añadido el seguimiento en paper de S6, perfil crecimiento (empieza el 19-10-2026, primeros pesos publicados el 17-10 con datos hasta el cierre del 16-10), en paralelo y sin cambiar las demás carteras.
