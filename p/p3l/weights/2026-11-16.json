@@ -1,0 +1,21 @@
+{
+  "portfolio": "P3-L",
+  "execute_at_close_of": "2026-11-13",
+  "holds_session": "2026-11-16",
+  "decided_on_close_of": "2026-11-13",
+  "published_utc": "2026-11-13T23:31:24Z",
+  "target_weights": {
+    "SMH": 0.25,
+    "XLV": 0.25,
+    "IWM": 0.05,
+    "BIL": 0.45
+  },
+  "exposure": 0.55,
+  "positions_by_strategy": {
+    "FX415": "SMH",
+    "DF374": "none",
+    "IWM_UP_DN_20D": "IWM",
+    "DR20": "XLV"
+  },
+  "note": "weights after caps; entries and exits happen at the close of decided_on_close_of; uninvested part in BIL"
+}
