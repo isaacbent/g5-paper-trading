@@ -1,0 +1,46 @@
+{
+  "strategy": "C2 (paper follow-up, not adopted)",
+  "execute_at_open_of": "2026-11-17",
+  "decided_on_close_of": "2026-11-16",
+  "published_utc": "2026-11-16T23:31:45Z",
+  "aggregate_target_weights": {
+    "BIL": 0.453,
+    "SHY": 0.2266,
+    "QQQ": 0.1492,
+    "DBC": 0.1146,
+    "IEF": 0.0566
+  },
+  "tranches": [
+    {
+      "tranche": 0,
+      "last_decision_close": "2026-11-13",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": false
+    },
+    {
+      "tranche": 1,
+      "last_decision_close": "2026-11-16",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": true
+    },
+    {
+      "tranche": 2,
+      "last_decision_close": "2026-11-10",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": false
+    },
+    {
+      "tranche": 3,
+      "last_decision_close": "2026-11-11",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": false
+    },
+    {
+      "tranche": 4,
+      "last_decision_close": "2026-11-12",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": false
+    }
+  ],
+  "note": "5 tranches of 20 %; one tranche re-decides each session; weights already scaled by each tranche's exposure; rest in BIL"
+}
