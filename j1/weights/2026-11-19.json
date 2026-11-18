@@ -1,0 +1,44 @@
+{
+  "strategy": "J1 (paper follow-up, robustness level PAPER)",
+  "execute_at_open_of": "2026-11-19",
+  "decided_on_close_of": "2026-11-18",
+  "published_utc": "2026-11-18T23:31:28Z",
+  "aggregate_target_weights": {
+    "BIL": 0.7299,
+    "DBC": 0.0865,
+    "XLV": 0.0523,
+    "XLF": 0.0523,
+    "XLP": 0.0421,
+    "QQQ": 0.0267,
+    "XLE": 0.0102
+  },
+  "tranches": [
+    {
+      "tranche": 0,
+      "last_decision_close": "2026-11-13",
+      "exposure": 1.0
+    },
+    {
+      "tranche": 1,
+      "last_decision_close": "2026-11-16",
+      "exposure": 1.0
+    },
+    {
+      "tranche": 2,
+      "last_decision_close": "2026-11-17",
+      "exposure": 0.923
+    },
+    {
+      "tranche": 3,
+      "last_decision_close": "2026-11-18",
+      "exposure": 0.898
+    },
+    {
+      "tranche": 4,
+      "last_decision_close": "2026-11-12",
+      "exposure": 0.921
+    }
+  ],
+  "tom_sleeve_in_SPY_on_next_session": false,
+  "note": "80 % in 5 weekly tranches (weights scaled by each tranche's exposure) + 20 % calendar sleeve (switches at the close); rest in BIL"
+}
