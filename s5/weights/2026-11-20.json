@@ -1,0 +1,69 @@
+{
+  "strategy": "S5 stability selection (paper follow-up)",
+  "execute_at_open_of": "2026-11-20",
+  "decided_on_close_of": "2026-11-19",
+  "published_utc": "2026-11-19T23:32:17Z",
+  "aggregate_target_weights": {
+    "BIL": 0.63,
+    "SPY": 0.0865,
+    "XLV": 0.0538,
+    "XLF": 0.0538,
+    "XLP": 0.0517,
+    "SHY": 0.0487,
+    "DBC": 0.0393,
+    "IEF": 0.0242,
+    "EFA": 0.0112,
+    "VNQ": 0.0096,
+    "IWM": 0.0027,
+    "XLE": 0.0027,
+    "TLT": 0.0023,
+    "EEM": 0.0022,
+    "VGK": 0.0008,
+    "IBB": 0.0006,
+    "XBI": 0.0006,
+    "XLY": 0.0006,
+    "KRE": 0.0005,
+    "LQD": 0.0004,
+    "HYG": 0.0004,
+    "XLB": 0.0003,
+    "EWJ": 0.0001,
+    "GLD": -0.0008,
+    "XLK": -0.0028,
+    "XLU": -0.0028,
+    "XLI": -0.0029,
+    "QQQ": -0.0137
+  },
+  "tranches": [
+    {
+      "tranche": 0,
+      "last_decision_close": "2026-11-13",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": false
+    },
+    {
+      "tranche": 1,
+      "last_decision_close": "2026-11-16",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": false
+    },
+    {
+      "tranche": 2,
+      "last_decision_close": "2026-11-17",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": false
+    },
+    {
+      "tranche": 3,
+      "last_decision_close": "2026-11-18",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": false
+    },
+    {
+      "tranche": 4,
+      "last_decision_close": "2026-11-19",
+      "exposure": 1.0,
+      "redecides_at_close_of_D": true
+    }
+  ],
+  "note": "5 tranches of 20 %; one tranche re-decides each session; no volatility layer; rest in BIL"
+}
